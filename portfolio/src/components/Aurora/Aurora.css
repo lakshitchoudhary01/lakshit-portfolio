@@ -1,4 +1,4 @@
-.aurora{
+/* .aurora{
 
 position:fixed;
 
@@ -10,6 +10,14 @@ pointer-events:none;
 
 z-index:-1;
 
+} */
+
+.aurora{
+    position: fixed;
+    inset: 0;
+    overflow: clip;      /* instead of hidden */
+    pointer-events: none;
+    z-index: -1;
 }
 
 .aurora-circle{
@@ -73,8 +81,12 @@ transform:translate(0,0);
 }
 
 100%{
+  transform:translate(40px,-40px);
 
-transform:translate(120px,-80px);
+
+/* transform:translate(120px,-80px); */
+/* transform:translate(40px,-40px); */
+/* transform:translate3d(40px,-40px,0); */
 
 }
 
