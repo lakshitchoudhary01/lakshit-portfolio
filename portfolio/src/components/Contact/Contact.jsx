@@ -1,4 +1,17 @@
+// import "./Contact.css";
+// import { motion } from "framer-motion";
+
+// import {
+//   FaEnvelope,
+//   FaPhone,
+//   FaMapMarkerAlt,
+//   FaGithub,
+//   FaLinkedin
+// } from "react-icons/fa";
+
 import "./Contact.css";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
 import {
@@ -10,6 +23,35 @@ import {
 } from "react-icons/fa";
 
 function Contact() {
+  const form = useRef();
+
+const [loading, setLoading] = useState(false);
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  setLoading(true);
+
+  emailjs
+    .sendForm(
+      "service_z35pgwa",
+      "template_jb4f9yh",
+      form.current,
+      "rclQLQQXcMt4vh4Uc"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+
+      form.current.reset();
+
+      setLoading(false);
+    })
+    .catch(() => {
+      alert("Failed to send message. Please try again.");
+
+      setLoading(false);
+    });
+};
   return (
     <section id="contact" className="contact">
 
@@ -80,14 +122,57 @@ function Contact() {
           </motion.div>
 
           <motion.form
+  ref={form}
+  onSubmit={sendEmail}
+  className="contact-form"
+  initial={{ x: 80, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: .7 }}
+  viewport={{ once: true }}
+>
+
+          {/* <motion.form
             className="contact-form"
             initial={{x:80,opacity:0}}
             whileInView={{x:0,opacity:1}}
             transition={{duration:.7}}
             viewport={{once:true}}
-          >
+          > */}
+          <input
+  type="text"
+  name="from_name"
+  placeholder="Your Name"
+  required
+/>
 
-            <input
+<input
+  type="email"
+  name="from_email"
+  placeholder="Your Email"
+  required
+/>
+
+<input
+  type="tel"
+  name="phone"
+  placeholder="Phone Number"
+/>
+
+<input
+  type="text"
+  name="subject"
+  placeholder="Subject"
+  required
+/>
+
+<textarea
+  name="message"
+  rows="6"
+  placeholder="Write your message..."
+  required
+></textarea>
+
+            {/* <input
               type="text"
               placeholder="Your Name"
             />
@@ -105,11 +190,13 @@ function Contact() {
             <textarea
               rows="6"
               placeholder="Write your message..."
-            ></textarea>
-
-            <button type="submit">
+            ></textarea> */}
+<button type="submit" disabled={loading}>
+  {loading ? "Sending..." : "Send Message"}
+</button>
+            {/* <button type="submit">
               Send Message
-            </button>
+            </button> */}
 
           </motion.form>
 
