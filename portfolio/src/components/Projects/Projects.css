@@ -1,7 +1,5 @@
 .projects{
-
-background:#222228;
-
+    background: var(--bg2);
 }
 
 .featured-project{

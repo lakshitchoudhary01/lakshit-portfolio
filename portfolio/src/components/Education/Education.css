@@ -1,7 +1,10 @@
-.education{
+/* .education{
 
 background:#09090b;
 
+} */
+.education{
+    background: var(--bg);
 }
 
 .timeline{
