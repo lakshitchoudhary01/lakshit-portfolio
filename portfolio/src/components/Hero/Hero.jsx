@@ -63,7 +63,7 @@ function Hero() {
         </p>
 
 
-          <div className="floating-icons">
+          <div className="hero-buttons">
 
           <a href="#contact" className="btn-primary">
             Hire Me

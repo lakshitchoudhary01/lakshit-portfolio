@@ -252,31 +252,51 @@
 
 @media(max-width:768px){
 
+
 .hero h1{
+    font-size:clamp(2.4rem,8vw,4.5rem);
+}
+
+/* .hero h1{
 
 font-size:48px;
 
-}
+} */
 
 .typing{
+    font-size:clamp(1.2rem,5vw,2rem);
+}
+
+/* .typing{
 
 font-size:26px;
 
-}
+} */
+
 
 .hero-image{
+    width:100%;
+    max-width:260px;
+    aspect-ratio:1/1;
+    height:auto;
+}
+/* .hero-image{
 
 width:190px;
 
 height:190px;
 
-}
+} */
 
 .hero p{
+    font-size:clamp(15px,3vw,19px);
+}
+
+/* .hero p{
 
 font-size:16px;
 
-}
+} */
 
 }
 .floating-icons{
