@@ -1,6 +1,7 @@
 .skills{
 
-background:#6262ce;
+/* background:#6262ce; */
+background:var(--bg);
 
 }
 
@@ -37,6 +38,8 @@ border-color:#7c5cff;
 box-shadow:0 15px 35px rgba(124,92,255,.25);
 
 }
+
+
 
 .skill-header{
 

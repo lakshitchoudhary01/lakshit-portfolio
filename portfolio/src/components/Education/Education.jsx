@@ -25,7 +25,7 @@ const timeline = [
     title: "Senior Secondary (Class XII)",
     place: "CBSE Board",
     description:
-      "Completed Physics, Chemistry and Mathematics with Computer Science."
+      "Completed Senior Secondary education under the CBSE Board with Physics, Chemistry, and Mathematics (PCM), building a strong analytical and problem-solving foundation."
   },
   {
     icon: <FaGraduationCap />,
