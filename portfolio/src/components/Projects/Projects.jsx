@@ -9,7 +9,7 @@ import {
 
 import career from "../../assets/projects/career-guide.png";
 import portfolio from "../../assets/projects/portfolio.png";
-import ecommerce from "../../assets/projects/ecommerce.png";
+import CloudDrive from "../../assets/projects/ecommerce.png";
 
 const projects = [
 
@@ -61,22 +61,24 @@ demo:"#"
 
 {
 
-title:"E-Commerce Website",
+title:"Cloud Storage Drive",
 
 image:ecommerce,
 
 description:
-"A full stack shopping application with authentication, cart, payment integration and admin dashboard.",
+"A full-stack cloud storage application with secure JWT authentication, file and folder management, Cloudinary integration, and a responsive dashboard for organizing and managing files online.",
 
 tech:[
-"React",
-"Node",
-"MongoDB"
+ "React",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Cloudinary"
 ],
 
-github:"#",
+github:"https://github.com/lakshitchoudhary01/cloud-storage-drive",
 
-demo:"#"
+demo:"https://cloud-storage-drive-theta.vercel.app/"
 
 }
 
@@ -176,7 +178,7 @@ key={index}
 
 </div>
 
-{/* <div className="project-links">
+<div className="project-links">
 
 <a
 href={featured.github}
@@ -204,7 +206,7 @@ Live Demo
 
 </a>
 
-</div> */}
+</div>
 
 </div>
 
@@ -273,7 +275,7 @@ key={i}
 
 </div>
 
-{/* <div className="project-links">
+<div className="project-links">
 
 <a href={project.github}>
 
@@ -287,7 +289,7 @@ key={i}
 
 </a>
 
-</div> */}
+</div>
 
 </div>
 
