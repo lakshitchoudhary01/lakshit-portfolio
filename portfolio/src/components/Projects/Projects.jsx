@@ -78,7 +78,7 @@ tech:[
 
 github:"https://github.com/lakshitchoudhary01/cloud-storage-drive",
 
-demo:"https://cloud-storage-drive-theta.vercel.app/"
+demo:"https://cloud-storage-drive-theta.vercel.app/register"
 
 }
 
