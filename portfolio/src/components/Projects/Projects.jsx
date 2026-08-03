@@ -9,7 +9,7 @@ import {
 
 import career from "../../assets/projects/career-guide.png";
 import portfolio from "../../assets/projects/portfolio.png";
-import CloudDrive from "../../assets/projects/ecommerce.png";
+import ecommerce from "../../assets/projects/ecommerce.png";
 
 const projects = [
 
@@ -53,7 +53,7 @@ tech:[
 "Framer Motion"
 ],
 
-github:"#",
+github:"https://github.com/lakshitchoudhary01/lakshit-portfolio/tree/main/portfolio",
 
 demo:"#"
 
